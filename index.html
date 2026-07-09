@@ -234,11 +234,11 @@
     box-shadow:0 0 0 1px rgba(236,229,218,0.15), 0 0 60px rgba(158,27,50,0.35), 0 0 120px rgba(90,42,107,0.25);
   }
   .hero-photo-wrap img{
-    width:100%; height:100%; object-fit:cover; filter:grayscale(1) contrast(1.15) brightness(0.85);
+    width:100%; height:100%; object-fit:cover; filter:grayscale(0.6) contrast(1.1) brightness(1.35) saturate(0.9);
   }
   .hero-photo-wrap::after{
     content:""; position:absolute; inset:0;
-    background:radial-gradient(circle, transparent 40%, rgba(7,5,10,0.85) 100%);
+    background:radial-gradient(circle, transparent 60%, rgba(7,5,10,0.55) 100%);
   }
 </style>
 </head>
@@ -250,15 +250,182 @@
 <div id="embers"></div>
 
 <nav>
-  <div class="brand"><img src="data:image/jpeg;base64,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" alt="Savage logo">Savage</div>
+  <div class="brand"><img src="logo.jpg" alt="Savage logo">Savage</div>
   <div class="nav-links">
     <a href="#about">About</a>
     <a href="#features">Inside</a>
     <a href="#roles">Roles</a>
   </div>
-  <a href="#" class="nav-cta">Join Server</a>
+  <a href="https://discord.gg/neemSYDNVZ" target="_blank" class="nav-cta">Join Server</a>
 </nav>
 
 <header class="hero">
   <div class="hero-eyebrow">A new kind of dark corner of the internet</div>
-  <div class="hero-photo-wrap"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBAUEBAYFBQUGBgYHCQ4JCQgICRINDQoOFRIWFhUSFBQXGiEcFxgfGRQUHScdHyIjJSUlFhwpLCgkKyEkJST/2wBDAQYGBgkICREJCREkGBQYJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCT/wAARCAMgAyADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD5UooooAKKKKAFpKKKACiiigAooooAKKKWgCSAfNVoelVbf74q0KAFK4NIVp4PamyDHpQAzFKBSDr2pQD9aAHUu3PPSm8+lLzQAYHrSgUnPpRn2oAdSimF8U3zhnqOKAJDyaMUwTL3YUvnJ13LQA8D2p2KZ9oTP3hxR56H+JaAH0Y5pomj/vCl85P7woAXml/GjzY/VfzoEsfqv50AL2pCKPMUdx+dBmUdxQAmKcBmmCZfb86cJU65FADse9Lj6U0zR+tJ5qdmFADtmetG2miVPWnecvbJoAUKwIIOCORU1woJWWPhZRu6dD3FVzMDjGeasQSedC8GMsfnj+o6j8RQARDerx+25frUZBdcdQKRZtu1x25qRsA7lOVYbh9DQBDtx1FISRQzHjIqNnJz1oAf5rUFyRzUQJFKGIx1oAkB9/pikJ5zzTN/IBFG+gBwHBp6k4IqESYOKcsu3sDQBYRA4ORk+lIyrgg5NNjuEQksrdONrYwac90m0BS3HqvegBixIWwd2PY06SBIyF3Nu70Q3EYcFiMdehokuI2fPBGevrQA4qAp+f6cUx3KqQDwaGmXH0qJ5FbmgBdx9eaFzzzTdyjGOKXeMdaAELEY5pCisxLc0pIOKaX5oAXy07Cjyl6EGm+ZnvQHB70AL5cXdT+dAjj/ALp/OmGTjik3/hQA8xx++PrR5SHoD+dNL0BwDQA4QJnPP50otk/2vzpY2z0qcLxjFAEAtU9WoNsgGSzCp8AZJOBULNuPoBQBVmUKGAJI96gqxcfxfSq9ABRRRQAUUUUAFFFFABRRRQAUlLSUALRQOtHegBKKKKACiiigApaSigAooooAKKKWgBKWiigBKWkpaAEooooAKKKKACii
+  <div class="hero-photo-wrap"><img src="savage.jpg" alt="Savage"></div>
+  <div class="neon-sign">Savage</div>
+  <p class="hero-sub">
+    Dating. Chill talk. Late-night gaming.<br>
+    <strong>One server, three worlds — built for people who like their community with a little edge.</strong>
+  </p>
+  <div class="hero-ctas">
+    <a href="https://discord.gg/neemSYDNVZ" target="_blank" class="btn-primary">Enter Savage →</a>
+    <a href="#features" class="btn-ghost">See what's inside</a>
+  </div>
+  <div class="hero-meta">
+    <div><b>Day One</b> Founding Members Open</div>
+    <div><b>24/7</b> Active Voice Channels</div>
+    <div><b>Weekly</b> Giveaways &amp; Events</div>
+  </div>
+</header>
+
+<section class="section" id="about">
+  <div class="eyebrow">The Vibe</div>
+  <h2>Not another sleepy server. This one has a pulse.</h2>
+  <p class="section-lead">Savage is where you come to actually talk to people — flirt a little, vent about your day, or grind ranked until 3am with people who won't rage-quit on you. Gothic aesthetic, zero pretension.</p>
+
+  <div class="about-grid">
+    <div class="about-card">
+      <span class="glyph">✦</span>
+      <h3>Dating</h3>
+      <p>Real conversations, not swipe fatigue. Meet people through voice, events, and shared taste — not a profile grid.</p>
+    </div>
+    <div class="about-card">
+      <span class="glyph">☾</span>
+      <h3>Chill</h3>
+      <p>Somewhere to just exist — music, late-night talk, venting channels, and people who'll actually reply.</p>
+    </div>
+    <div class="about-card">
+      <span class="glyph">♜</span>
+      <h3>Gaming</h3>
+      <p>LFG channels, squad-ups, and community game nights across whatever you're currently addicted to.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="features">
+  <div class="eyebrow">What's Inside</div>
+  <h2>Everything a server needs to actually feel alive.</h2>
+  <p class="section-lead">We're building Savage properly from day one — not just a name and a few empty channels.</p>
+
+  <div class="features">
+    <div class="feature">
+      <div class="num">01</div>
+      <h3>Giveaways</h3>
+      <p>Regular giveaways for Nitro, games, and server perks — bigger prizes as we grow, starting from week one.</p>
+    </div>
+    <div class="feature">
+      <div class="num">02</div>
+      <h3>Community Events</h3>
+      <p>Chat events, game nights, movie nights, and themed nights that actually get people talking, not just watching.</p>
+    </div>
+    <div class="feature">
+      <div class="num">03</div>
+      <h3>Active Voice Channels</h3>
+      <p>Voice chats that don't die at 9pm — chill lounges, gaming rooms, and late-night talk channels running around the clock.</p>
+    </div>
+    <div class="feature">
+      <div class="num">04</div>
+      <h3>Dedicated Staff Team</h3>
+      <p>A real, invested staff team — moderating fairly, running events, and actually present in voice and chat.</p>
+    </div>
+    <div class="feature">
+      <div class="num">05</div>
+      <h3>Custom Roles</h3>
+      <p>Earn or unlock roles with real personality — not generic "member" tags. Show who you are at a glance.</p>
+    </div>
+    <div class="feature">
+      <div class="num">06</div>
+      <h3>Founding Member Perks</h3>
+      <p>Join early and lock in exclusive founding roles, colors, and recognition that later members can't get.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="roles">
+  <div class="eyebrow">Insane Roles</div>
+  <h2>Roles with personality, not just permissions.</h2>
+  <p class="section-lead">A first look at the role lineup — colors and names get sharper as the server grows.</p>
+
+  <div class="roles-wrap">
+    <div class="role-row">
+      <div class="role-left">
+        <span class="role-dot" style="color:#ff2d55;"></span>
+        <span class="role-name">Vampire Lord</span>
+      </div>
+      <span class="role-desc">Top-tier founding role</span>
+      <span class="role-tag">Elite</span>
+    </div>
+    <div class="role-row">
+      <div class="role-left">
+        <span class="role-dot" style="color:#a25aff;"></span>
+        <span class="role-name">Phantom</span>
+      </div>
+      <span class="role-desc">Active member, high presence</span>
+      <span class="role-tag">Active</span>
+    </div>
+    <div class="role-row">
+      <div class="role-left">
+        <span class="role-dot" style="color:#ff7a5a;"></span>
+        <span class="role-name">Soulmate</span>
+      </div>
+      <span class="role-desc">Dating &amp; matched pairs</span>
+      <span class="role-tag">Dating</span>
+    </div>
+    <div class="role-row">
+      <div class="role-left">
+        <span class="role-dot" style="color:#5ad1ff;"></span>
+        <span class="role-name">Night Owl</span>
+      </div>
+      <span class="role-desc">Late-night chill regulars</span>
+      <span class="role-tag">Chill</span>
+    </div>
+    <div class="role-row">
+      <div class="role-left">
+        <span class="role-dot" style="color:#8affb0;"></span>
+        <span class="role-name">Reaper</span>
+      </div>
+      <span class="role-desc">Gaming squad leaders</span>
+      <span class="role-tag">Gaming</span>
+    </div>
+    <div class="role-row">
+      <div class="role-left">
+        <span class="role-dot" style="color:#e0c568;"></span>
+        <span class="role-name">Coven Staff</span>
+      </div>
+      <span class="role-desc">Moderators &amp; event hosts</span>
+      <span class="role-tag">Staff</span>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <h2>The door's open. Not everyone will walk through it.</h2>
+  <p>Be one of the first names in Savage — founding roles, first pick of events, and a seat before the crowd shows up.</p>
+  <a href="https://discord.gg/neemSYDNVZ" target="_blank" class="btn-primary">Join Savage Now →</a>
+</div>
+
+<footer>
+  <div class="brand">Savage</div>
+  <div>Dating · Chill · Gaming — one dark little corner of Discord.</div>
+</footer>
+
+<script>
+  // Floating embers
+  const container = document.getElementById('embers');
+  const count = 22;
+  for(let i=0;i<count;i++){
+    const e = document.createElement('div');
+    e.className = 'ember';
+    const size = 2 + Math.random()*4;
+    e.style.width = size+'px';
+    e.style.height = size+'px';
+    e.style.left = Math.random()*100+'vw';
+    e.style.animationDuration = (8 + Math.random()*10)+'s';
+    e.style.animationDelay = (Math.random()*10)+'s';
+    container.appendChild(e);
+  }
+</script>
+
+</body>
+        </html>
+        
